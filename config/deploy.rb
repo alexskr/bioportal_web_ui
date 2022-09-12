@@ -1,6 +1,7 @@
-set :application, 'bioportal_web_ui'
+set :application, "bioportal_web_ui"
+set :org, "alexskr"
 
-set :repo_url, "https://github.com/ncbo/#{fetch(:application)}.git"
+set :repo_url, "https://github.com/#{fetch(:org)}/#{fetch(:application)}.git"
 
 set :deploy_via, :remote_cache
 

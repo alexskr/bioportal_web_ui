@@ -112,7 +112,6 @@ ENV['MEMCACHE_SERVERS'] = 'localhost'
 
 # Custom BioPortal logging
 require 'log'
-$REMOTE_LOGGING = false
 
 # URL where BioMixer GWT app is located
 $BIOMIXER_URL = 'http://biomixer.bioontology.org'
@@ -135,4 +134,3 @@ $ORG_SITE = ($ORG.nil? || $ORG.empty?) ? $SITE : "#{$ORG} #{$SITE}"
 
 # Email address to mail when exceptions are raised
 ExceptionNotifier.exception_recipients = [$ERROR_EMAIL]
-
