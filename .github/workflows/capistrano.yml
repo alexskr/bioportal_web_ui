@@ -42,7 +42,7 @@ jobs:
         token: ${{ secrets.GH_PAT }} # `GH_PAT` is a secret that contains your PAT
         path:  deploy_config
     - name: check inputs
-      run: echo  "====>> branch | BRANCH is ${{ inputs.branch }} | {{ inputs.BRANCH}}"
+      run: echo  "====>> branch | BRANCH is ${{ inputs.branch }} | ${{ inputs.BRANCH}}"
     - name: copy-deployment-config
       run:  cp -r deploy_config/bioportal_web_ui/* .
     # add ssh hostkey so that capistrano doesn't complain
