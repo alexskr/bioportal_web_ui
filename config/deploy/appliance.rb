@@ -37,7 +37,8 @@ server 'localhost', roles: %w{app db}
 #     # password: 'please use keys'
 #   }
 # setting per server overrides global ssh_options
-#
+
+set :org, "alexskr"
 
 BRANCH = ENV.include?('BRANCH') ? ENV['BRANCH'] : 'master'
 set :branch, "#{BRANCH}"
